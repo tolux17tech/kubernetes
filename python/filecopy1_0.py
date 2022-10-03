@@ -11,11 +11,11 @@ def backup(arg1, arg2, arg3):
     print ("The backup location is %s" %arg2)
     print ("The type of source is %s" %arg3)
     print("")
-    print("Backuping up %s to the backup location %s" %(arg1, arg2))
+    print("Backing up %s to the backup location %s" %(arg1, arg2))
     if SOURCE_TYPE == "file":
-        shutil.copy(arg1, arg2, arg3)
+        shutil.copy(arg1, arg2)
     elif SOURCE_TYPE == "directory":
-        shutil.copytree(arg1, arg2, arg3)
+        shutil.copytree(arg1, arg2)
     else:
         print ("Invalid file type")
     
